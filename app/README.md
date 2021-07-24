@@ -1,3 +1,8 @@
+# I LOVE ONSYA
+## 環境構築
+1. `git clone`の後、`setup.sh`を実行してnode_modulesをインストール
+2. docker-compose up
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
