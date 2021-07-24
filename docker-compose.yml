@@ -1,6 +1,6 @@
 version: '2'
 services:
-  app:
+  onsya:
     build: .
     command: yarn start
     volumes:
