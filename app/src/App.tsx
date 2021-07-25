@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const App: React.FC = () => {
   const classes = useStyles();
-  const [keyword, setKeyword] = useState<string>("ONSYA！"); // キーワードを保持
+  const [keyword, setKeyword] = useState<string>("ONSYA"); // キーワードを保持
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null); // canvasの参照
 
