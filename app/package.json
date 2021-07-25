@@ -23,6 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage":"https://obashun22.github.io/ilove/",
   "eslintConfig": {
     "extends": [
       "react-app",
