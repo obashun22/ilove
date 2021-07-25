@@ -20,14 +20,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "rm": "rm -rf docs",
-    "mv": "mv build docs",
-    "git": "git add . && git commit && git push origin main",
-    "deploy": "yarn run rm && yarn run build && yarn run mv && yarn run git",
+    "deploy": "rm -rf docs && yarn run build && mv build docs && cd .. && git acm 'Deployed' && git push origin main",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage":"https://obashun22.github.io/ilove/",
   "eslintConfig": {
     "extends": [
       "react-app",
