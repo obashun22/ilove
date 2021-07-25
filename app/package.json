@@ -20,7 +20,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "rm -rf docs && yarn run build && mv build docs && cd .. && git acm 'Deployed' && git push origin main",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
