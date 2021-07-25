@@ -47,7 +47,7 @@ const saveCanvas = (canvas: HTMLCanvasElement) => {
 	//アンカータグを作成
 	let a = document.createElement('a');
 	//canvasをJPEG変換し、そのBase64文字列をhrefへセット
-	a.href = canvas.toDataURL('image/png', 0.85);
+	a.href = canvas.toDataURL('image/png', 1);
 	//ダウンロード時のファイル名を指定
 	a.download = 'download.png';
 	//クリックイベントを発生させる
@@ -64,6 +64,9 @@ const useStyles = makeStyles((theme: Theme) =>
     btn: {
       margin: theme.spacing(1),
     },
+    bagReport: {
+      color: 'silver',
+    }
   }),
 );
 
@@ -134,10 +137,19 @@ const App: React.FC = () => {
         1. <strong>好きなもの</strong>を入力<br />
         2. 【<strong>生成する</strong>】をクリック<br />
         3. 【<strong>保存</strong>】をクリック<br />
+        ※PCのみ対応
         <p>
           様々なオンラインイベントの背景画像として使えます。<br />
-          例. 就活の面接、商談、交流会など
+          例. 就活の面接、商談、交流会、授業など
         </p>
+        <div className={classes.bagReport}>
+          <h3>バグ</h3>
+          <p>
+            初回読み込み時にフォントが反映されない<br />
+            たまにフォントが日本語非対応<br />
+            スマホで保存できない
+          </p>
+        </div>
         <hr />
         <p>©2021 shunsuke oba</p>
       </Container>
